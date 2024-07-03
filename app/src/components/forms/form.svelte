@@ -6,6 +6,7 @@
     const now = Date.now();
     // const today = new Date(now).toISOString();
     const today = new Date(now).toLocaleDateString();
+    const madeWhere = "Armentières";
 </script>
 
 <form action="/create" method="post">
@@ -81,7 +82,6 @@
     <h3>LIEU</h3>
     
     <div>
-
         <Where />
     </div>
 
@@ -101,7 +101,7 @@
     <div class="when">
         <label for="faitA">
             A 
-            <input type="text" name="" id="">
+            <input value="{madeWhere}">
         </label>
         <label for="Le">
             Le
